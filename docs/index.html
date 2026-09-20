@@ -51,7 +51,10 @@
       <section class="section todos" aria-labelledby="todos-heading">
         <div class="section-head">
           <h2 id="todos-heading">Open todos</h2>
-          <p class="section-lede">Cross-fleet board — filled from the next @todo snapshot.</p>
+          <p class="section-lede">
+            Cross-fleet board —
+            <span id="todos-snapshot-label">waiting on @todo snapshot</span>.
+          </p>
         </div>
         <div id="todos" class="todos-panel" role="status">
           <p class="todos-empty">
@@ -67,7 +70,7 @@
 
     <script>
       // Injected / overridden at build time if needed; falls back to document last-modified.
-      window.__FLEET_UPDATED__ = "2026-09-20T07:02:08Z";
+      window.__FLEET_UPDATED__ = "2026-09-20T07:20:00Z";
     </script>
     <script src="js/app.js" type="module"></script>
   </body>

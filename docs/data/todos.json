@@ -1,1 +1,137 @@
-[]
+{
+  "snapshot": "2026-09-20",
+  "timezone": "Europe/Amsterdam",
+  "todos": [
+    {
+      "id": "F-49",
+      "title": "Kimi bots→fleet",
+      "due": "2026-09-18",
+      "lane": "personal",
+      "group": "overdue"
+    },
+    {
+      "id": "F-50",
+      "title": "ChatGPT bots→fleet",
+      "due": "2026-09-18",
+      "lane": "personal",
+      "group": "overdue"
+    },
+    {
+      "id": "F-51",
+      "title": "ConnectGroup assets productise parked",
+      "due": "2026-09-17",
+      "lane": "assets",
+      "group": "overdue"
+    },
+    {
+      "id": "F-65",
+      "title": "Cancel Meta",
+      "due": "2026-09-20",
+      "lane": "personal",
+      "priority": "high",
+      "group": "due_soon"
+    },
+    {
+      "id": "F-22",
+      "title": "Corporate tax VPB work-on hard 1 Nov",
+      "due": "2026-09-21",
+      "lane": "personal",
+      "group": "due_soon"
+    },
+    {
+      "id": "F-5",
+      "title": "FB whole setup",
+      "due": "2026-09-27",
+      "lane": "wool",
+      "group": "later"
+    },
+    {
+      "id": "F-30",
+      "title": "workshop Frank",
+      "due": "2026-09-30",
+      "group": "later"
+    },
+    {
+      "id": "F-38",
+      "title": "workshop Frank",
+      "due": "2026-09-30",
+      "group": "later"
+    },
+    {
+      "id": "F-44",
+      "title": "workshop Frank",
+      "due": "2026-09-30",
+      "group": "later"
+    },
+    {
+      "id": "F-35–F-42",
+      "title": "workshop prep early Oct",
+      "due": "2026-10-01",
+      "group": "later"
+    },
+    {
+      "id": "F-57",
+      "title": "EKOO webinar",
+      "due": "2026-10-13",
+      "lane": "wool",
+      "group": "later"
+    },
+    {
+      "id": "F-6",
+      "title": "invites mid Oct",
+      "due": "2026-10-15",
+      "group": "later"
+    },
+    {
+      "id": "F-40",
+      "title": "invites mid Oct",
+      "due": "2026-10-15",
+      "group": "later"
+    },
+    {
+      "id": "F-3",
+      "title": "MIT wool-wash",
+      "due": "2026-11-01",
+      "lane": "wool",
+      "priority": "high",
+      "group": "later"
+    },
+    {
+      "id": "F-59",
+      "title": "EKOO window",
+      "due": "2026-12-03",
+      "lane": "wool",
+      "group": "later"
+    },
+    {
+      "id": "F-1",
+      "title": "workshop",
+      "due": "2027-02-07",
+      "group": "later"
+    },
+    {
+      "id": "F-55",
+      "title": "EKOO GO/NO-GO",
+      "lane": "wool",
+      "group": "undated"
+    },
+    {
+      "id": "F-60",
+      "title": "EKOO advisor pack",
+      "lane": "wool",
+      "group": "undated"
+    },
+    {
+      "id": "F-46",
+      "title": "LT allowlist PR",
+      "lane": "lt",
+      "group": "undated"
+    },
+    {
+      "id": "F-48",
+      "title": "Score→LT v2",
+      "lane": "lt",
+      "group": "undated"
+    }
+  ]
+}

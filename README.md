@@ -31,29 +31,30 @@ Then open http://localhost:8080
 
 ## Update open todos
 
-Replace the empty array in [`docs/data/todos.json`](docs/data/todos.json):
+Edit [`docs/data/todos.json`](docs/data/todos.json). Preferred shape:
 
 ```json
-[
-  {
-    "title": "Ship EKOO draft",
-    "lane": "wool",
-    "bot": "wool_grants"
-  },
-  {
-    "title": "RLS audit",
-    "lane": "lt",
-    "bot": "lt_supabase",
-    "status": "open"
-  }
-]
+{
+  "snapshot": "2026-09-20",
+  "timezone": "Europe/Amsterdam",
+  "todos": [
+    {
+      "id": "F-65",
+      "title": "Cancel Meta",
+      "due": "2026-09-20",
+      "lane": "personal",
+      "priority": "high",
+      "group": "due_soon"
+    }
+  ]
+}
 ```
 
-Supported fields per item: `title` (or `text`), optional `lane`, `bot`, `status`.
+Fields: `id`, `title` (or `text`), optional `due` (YYYY-MM-DD), `lane`, `bot`, `priority` (`high`), `group` (`overdue` | `due_soon` | `later` | `undated`).
 
-An empty `[]` shows the waiting empty state:
+A bare `[]` (or `{ "todos": [] }`) shows the waiting empty state.
 
-> Waiting on @todo snapshot — panel fills on next update.
+Lane tags used on the board: `wool`, `lt`, `acfo`, `personal`, `assets`.
 
 ## Fleet data
 

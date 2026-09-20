@@ -1,0 +1,151 @@
+{
+  "title": "Fleet overview",
+  "subtitle": "lanes · bots · todos",
+  "brand": "Grok Bot fleet",
+  "rooms": [
+    "wool_ekoo",
+    "ApiView / ms_supabase",
+    "cg_ms",
+    "fleet_eval",
+    "life",
+    "lt_cut",
+    "lt_"
+  ],
+  "lanes": [
+    {
+      "id": "wool",
+      "name": "wool",
+      "accent": "#5ec8a8",
+      "bots": [
+        {
+          "name": "wool_scout",
+          "job": "competitions/funding radar (Q3–Q4 2027 filter)"
+        },
+        {
+          "name": "wool_mail",
+          "job": "Boldwool Outlook inbox"
+        },
+        {
+          "name": "wool_drive",
+          "job": "Drive folder ops"
+        },
+        {
+          "name": "wool_publishing",
+          "job": "journey content"
+        },
+        {
+          "name": "wool_grants",
+          "job": "grant PM (EKOO + MIT)"
+        }
+      ]
+    },
+    {
+      "id": "lt",
+      "name": "lt / Leadtrigger",
+      "accent": "#6b9fd4",
+      "bots": [
+        {
+          "name": "lt_news_code",
+          "job": "repo explain + implement"
+        },
+        {
+          "name": "lt_cut",
+          "job": "simplify / Grok-first"
+        },
+        {
+          "name": "lt_supabase",
+          "job": "Supabase / RLS"
+        },
+        {
+          "name": "lt_railway",
+          "job": "Railway ops"
+        },
+        {
+          "name": "lt_apollo",
+          "job": "Apollo"
+        },
+        {
+          "name": "lt_offer_icp",
+          "job": "offer / ICP"
+        },
+        {
+          "name": "lt_outreach",
+          "job": "outreach"
+        },
+        {
+          "name": "lt_news_bound",
+          "job": "parked"
+        },
+        {
+          "name": "skill_zip",
+          "job": "Anthropic + Copilot SKILL zips"
+        },
+        {
+          "name": "pages",
+          "job": "GitHub Pages publisher"
+        },
+        {
+          "name": "assets",
+          "job": "asset lifecycle"
+        }
+      ]
+    },
+    {
+      "id": "acfo",
+      "name": "acfo / MS",
+      "accent": "#c9a06a",
+      "bots": [
+        {
+          "name": "acfo_Power Platform",
+          "job": "Power Platform / Copilot Studio ops"
+        }
+      ]
+    },
+    {
+      "id": "life",
+      "name": "life",
+      "accent": "#d4849a",
+      "bots": [
+        {
+          "name": "award",
+          "job": "propose points"
+        },
+        {
+          "name": "points",
+          "job": "lock scores"
+        },
+        {
+          "name": "todo",
+          "job": "single cross-project board"
+        }
+      ]
+    },
+    {
+      "id": "meta",
+      "name": "meta",
+      "accent": "#9b8fd4",
+      "bots": [
+        {
+          "name": "dr eggbot",
+          "job": "mint bots / Cursor"
+        },
+        {
+          "name": "facil",
+          "job": "room facilitator"
+        },
+        {
+          "name": "reddit_scout",
+          "job": "Reddit scout"
+        },
+        {
+          "name": "usage_watch",
+          "job": "usage watch"
+        },
+        {
+          "name": "Gmail",
+          "job": "personal Gmail ops"
+        }
+      ]
+    }
+  ]
+}

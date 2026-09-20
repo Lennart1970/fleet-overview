@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Grok Bot fleet overview — lanes, bots, todos. Calm OpenClaw-style dashboard."
+    />
+    <title>Fleet overview · Grok Bot fleet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="atmosphere" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <p class="brand">Grok Bot fleet</p>
+        <h1>Fleet overview</h1>
+        <p class="subtitle">lanes · bots · todos</p>
+        <p class="last-updated">
+          <span class="label">Last updated</span>
+          <time id="last-updated" datetime="">—</time>
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="section lanes" aria-labelledby="lanes-heading">
+        <div class="section-head">
+          <h2 id="lanes-heading">Lanes</h2>
+          <p class="section-lede">Bots grouped by lane — few pings, clear jobs.</p>
+        </div>
+        <div id="lanes" class="lane-grid"></div>
+      </section>
+
+      <section class="section rooms" aria-labelledby="rooms-heading">
+        <div class="section-head">
+          <h2 id="rooms-heading">Rooms</h2>
+          <p class="section-lede">Example rooms in the fleet.</p>
+        </div>
+        <ul id="rooms" class="room-list"></ul>
+      </section>
+
+      <section class="section todos" aria-labelledby="todos-heading">
+        <div class="section-head">
+          <h2 id="todos-heading">Open todos</h2>
+          <p class="section-lede">Cross-fleet board — filled from the next @todo snapshot.</p>
+        </div>
+        <div id="todos" class="todos-panel" role="status">
+          <p class="todos-empty">
+            Waiting on @todo snapshot — panel fills on next update.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Lennart’s Grok Bot fleet · static overview · no live metrics</p>
+    </footer>
+
+    <script>
+      // Injected / overridden at build time if needed; falls back to document last-modified.
+      window.__FLEET_UPDATED__ = "2026-09-20T07:02:08Z";
+    </script>
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>

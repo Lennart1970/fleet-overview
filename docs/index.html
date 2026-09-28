@@ -1,77 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Grok Bot fleet overview — lanes, bots, todos. Calm OpenClaw-style dashboard."
-    />
-    <title>Fleet overview · Grok Bot fleet</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <div class="atmosphere" aria-hidden="true"></div>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mijn bots in de keten · Lennart van Bolderick</title>
+<meta name="description" content="Van informatie binnen tot communiceren: welke AI-bots welke stap doen rond mijn drie speerpunten. Eén bot, één taak.">
+<meta name="theme-color" content="#f6f1e8">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:title" content="Mijn bots in de keten · Lennart van Bolderick">
+<meta property="og:description" content="Van informatie binnen tot communiceren: welke AI-bots welke stap doen rond mijn drie speerpunten. Eén bot, één taak.">
+<meta property="og:url" content="https://lennart1970.github.io/fleet-overview/">
+<meta property="og:image" content="https://lennart1970.github.io/journey/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mijn publieke reis: een wolvilter bouwt met AI-bots">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<nav class="nav" aria-label="Hoofdmenu">
+  <a class="brand" href="https://lennart1970.github.io/journey/">Lennart<span>·</span>journey</a>
+  <div class="links"><a href="https://lennart1970.github.io/journey/">Start</a><a href="https://lennart1970.github.io/journey/tech-stack.html">Stack</a><a href="https://lennart1970.github.io/journey/speerpunten.html">Speerpunten</a><a href="https://lennart1970.github.io/journey/strategie.html">Strategie</a><a href="https://lennart1970.github.io/fleet-overview/" aria-current="page">Bots</a></div>
+</nav>
 
-    <header class="site-header">
-      <div class="header-inner">
-        <p class="brand">Grok Bot fleet</p>
-        <h1>Fleet overview</h1>
-        <p class="subtitle">lanes · bots · todos</p>
-        <p class="last-updated">
-          <span class="label">Last updated</span>
-          <time id="last-updated" datetime="">—</time>
-        </p>
-      </div>
-    </header>
+<header class="hero">
+  <p class="eyebrow">Mijn publieke reis · bots</p>
+  <h1>Mijn bots <span>in de keten</span></h1>
+  <p class="lead">Geen lange lijst, maar de bots die er echt toe doen, op de plek waar ze werken. Rond mijn <a href="https://lennart1970.github.io/journey/speerpunten.html">drie speerpunten</a> loopt één keten: informatie komt binnen, Jev schift, ik leg vast en ik communiceer.</p>
+  <p class="stand"><span class="dot" aria-hidden="true"></span>Stand: 28 september 2026</p>
+</header>
 
-    <main>
-      <section class="section lanes" aria-labelledby="lanes-heading">
-        <div class="section-head">
-          <h2 id="lanes-heading">Lanes</h2>
-          <p class="section-lede">Bots grouped by lane — few pings, clear jobs.</p>
-        </div>
-        <div id="lanes" class="lane-grid"></div>
-      </section>
+<section aria-labelledby="principe">
+  <div class="card">
+    <p class="principle" id="principe"><span>Eén bot, één taak.</span> Ik werk met één bot en haal er specialisten bij.</p>
+  </div>
+</section>
 
-      <section class="section rooms" aria-labelledby="rooms-heading">
-        <div class="section-head">
-          <h2 id="rooms-heading">Rooms</h2>
-          <p class="section-lede">Example rooms in the fleet.</p>
-        </div>
-        <ul id="rooms" class="room-list"></ul>
-      </section>
+<section aria-labelledby="keten">
+  <h2 id="keten">De keten</h2>
+  <p class="section-intro">Vier stappen, van boven naar beneden.</p>
+  <div class="chain">
+    <article class="step">
+      <div class="stephead"><span class="num">1</span><h3>Informatie binnen</h3></div>
+      <p class="why">Feeds, nieuwsbrieven en mail.</p>
+      <ul class="bots">
+        <li><b>lt_feeds</b>Bouwt nieuwsfeeds rond een thema, zoals textiel-upcycling.</li>
+        <li><b>wool_scout</b>Zoekt wedstrijden en fondsen voor regeneratieve landbouw en textiel-upcycling.</li>
+        <li><b>wool_mail</b>Houdt de Boldwool-mailbox bij: sorteren, samenvatten, concepten.</li>
+        <li><b>Gmail</b>Doet hetzelfde voor mijn persoonlijke mail, inclusief nieuwsbrieven.</li>
+      </ul>
+    </article>
+    <article class="step jev">
+      <div class="stephead"><span class="num">2</span><h3>Jev-triage</h3></div>
+      <p class="why">Wat doet ertoe, en wat niet?</p>
+      <ul class="bots">
+        <li><b>wool_jev</b>Laat Jev nieuws over textiel-upcycling filteren voor Boldwool.</li>
+        <li><b>lt_jev_cal</b>Test en verbetert hoe goed Jev nieuws beoordeelt.</li>
+        <li><b>jev_watch</b>Volgt wat er nieuw is aan Jev zelf en adviseert daarover.</li>
+      </ul>
+    </article>
+    <article class="step">
+      <div class="stephead"><span class="num">3</span><h3>Vastleggen</h3></div>
+      <p class="why">Een resultaat telt pas als het ergens staat.</p>
+      <ul class="bots">
+        <li><b>wool_drive</b>Beheert de Boldwool-map in Google Drive.</li>
+        <li><b>todo</b>Mijn ene lijst met vervolgacties, en zet me aan het werk.</li>
+        <li><b>assets</b>Maakt van werk herbruikbare bouwstenen en houdt die bij.</li>
+      </ul>
+    </article>
+    <article class="step">
+      <div class="stephead"><span class="num">4</span><h3>Communiceren</h3></div>
+      <p class="why">Delen wat er is gebeurd.</p>
+      <ul class="bots">
+        <li><b>pages</b>Maakt van materiaal een statische website, zoals deze.</li>
+        <li><b>wool_publishing</b>Maakt van mijn Boldwool-praktijk verhalen voor de journey.</li>
+        <li><b>wool_outreach</b>Schrijft concepten voor contact namens Boldwool.</li>
+      </ul>
+      <p class="note">Versturen doe ik zelf. Niets gaat de deur uit zonder mijn "stuur".</p>
+    </article>
+  </div>
 
-      <section class="section todos" aria-labelledby="todos-heading">
-        <div class="section-head">
-          <h2 id="todos-heading">Open todos</h2>
-          <p class="section-lede">
-            Cross-fleet board —
-            <span id="todos-snapshot-label">waiting on @todo snapshot</span>.
-          </p>
-        </div>
-        <div id="todos" class="todos-panel" role="status">
-          <p class="todos-empty">
-            Waiting on @todo snapshot — panel fills on next update.
-          </p>
-        </div>
-      </section>
-    </main>
+  <div class="support">
+    <h3>Het fundament eronder</h3>
+    <p class="why">Bots die de keten draaiende houden.</p>
+    <ul class="bots">
+      <li><b>dr eggbot</b>Ontwerpt en maakt nieuwe bots, elk met één taak.</li>
+      <li><b>facil</b>Houdt gesprekken in rooms op koers en richting een besluit.</li>
+      <li><b>github_watch</b>Houdt mijn GitHub-account in de gaten en legt uit in gewone taal.</li>
+      <li><b>vercel_watch</b>Kijkt mee op Vercel en geeft advies.</li>
+      <li><b>lt_railway</b>Beheert de achtergronddiensten op Railway.</li>
+      <li><b>lt_supabase</b>Beheert en adviseert over de database.</li>
+      <li><b>usage_watch</b>Spoort bots op die veel verbruiken en weinig opleveren.</li>
+    </ul>
+  </div>
+</section>
 
-    <footer class="site-footer">
-      <p>Lennart’s Grok Bot fleet · static overview · no live metrics</p>
-    </footer>
+<section aria-labelledby="rooms">
+  <div class="card highlight">
+    <h2 id="rooms">Rooms</h2>
+    <p>Voor een klus zet ik een paar bots samen in een room. facil houdt het gesprek op koers, de specialisten doen elk hun eigen stap. Een paar voorbeelden:</p>
+    <div class="rooms"><span>Boldwool-team</span><span>Van feed tot concept</span><span>Infra-wachters</span><span>Jev verbeteren</span></div>
+  </div>
+</section>
 
-    <script>
-      // Injected / overridden at build time if needed; falls back to document last-modified.
-      window.__FLEET_UPDATED__ = "2026-09-20T07:20:00Z";
-    </script>
-    <script src="js/app.js" type="module"></script>
-  </body>
+<footer>
+  <p>Stand: 28 september 2026 · Onderdeel van mijn publieke reis.</p>
+  <p class="footnav"><a href="https://lennart1970.github.io/journey/">Start</a> · <a href="https://lennart1970.github.io/journey/tech-stack.html">Mijn tech stack</a> · <a href="https://lennart1970.github.io/journey/speerpunten.html">Mijn drie speerpunten</a> · <a href="https://lennart1970.github.io/journey/strategie.html">Boldwool-strategie</a></p>
+  <p class="small">Lennart van Bolderick · Boldwool</p>
+</footer>
+
+</main>
+</body>
 </html>

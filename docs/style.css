@@ -125,3 +125,6 @@ a{color:var(--accent)}
 }
 .cta{display:inline-block;background:#fff;color:var(--accent);font-weight:700;text-decoration:none;padding:11px 18px;border-radius:999px;margin-top:4px}
 .linkcard.wide+.linkcard.wide{margin-top:0}
+.layer{align-content:start}
+@media (min-width:720px){.bots:has(> li:nth-child(4)){grid-template-columns:repeat(2,1fr)}}
+.nowrap{white-space:nowrap}
